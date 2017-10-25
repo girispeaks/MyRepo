@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite1">
+	<test name="Regression">
+		<!-- <classes>
+			<class name="com.testng.tests.Test1"/>
+				<methods>
+					<exclude name="case1"/>
+				</methods> 
+			<groups>
+				<run>
+				<exclude name="regression"/>
+				</run>
+			</groups>
+		</classes>	    
+		<packages>
+			<package name="com.testng.tests1"/>
+			<package name="com.testng.tests2"/>
+		</packages>    
+		<classes>
+			<class name="com.testng.tests1.Test1"/>
+			<class name="com.testng.tests1.Test2"/>
+			<class name="com.testng.tests2.Test3"/>
+			<class name="com.testng.tests2.Test4"/>
+		</classes> 
+		<groups>
+			<run>
+				<include name="regression"/>
+				<include name="functional"/>
+			</run>
+		</groups> -->
+		<classes>
+			<class name="com.testng.tests1.Test1"/>
+			<methods>
+				<include name="caseA"/>
+			</methods>
+		</classes>
+	</test>	
+</suite>
+
+<!--  -->
