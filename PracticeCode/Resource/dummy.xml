@@ -1,0 +1,12 @@
+<suite name=suit1>
+	<test name=Integration Testing>
+		<classes>
+			<class name=com.qa.test.dummy.java>
+				<methods>
+					<include name=test/>
+				</methods>
+			</class>
+			<class name>com.qa.test.sample.java</class>
+		</classes>
+	</test>
+</suite>
