@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteName]">
+  <test name="TestA(failed)">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.testcases.LoginTest">
+        <methods>
+          <include name="init"/>
+          <include name="doLoginTest" invocation-numbers="0 1"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LoginTest -->
+      <class name="com.qtpselenium.zoho.project.testcases.LeadTest">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LeadTest -->
+    </classes>
+  </test> <!-- TestA(failed) -->
+  <test name="TestB(failed)">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.testcases.LoginTest">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LoginTest -->
+      <class name="com.qtpselenium.zoho.project.testcases.LeadTest">
+        <methods>
+          <include name="deleteLeadAccountTest" invocation-numbers="0"/>
+          <include name="createLeadTest" invocation-numbers="0 1 2 3"/>
+          <include name="quit"/>
+          <include name="convertLeadTest" invocation-numbers="0 1 2 3"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LeadTest -->
+    </classes>
+  </test> <!-- TestB(failed) -->
+  <test name="TestC(failed)">
+    <classes>
+      <class name="com.qtpselenium.zoho.project.testcases.LoginTest">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LoginTest -->
+      <class name="com.qtpselenium.zoho.project.testcases.PotentialTest">
+        <methods>
+          <include name="createPotentialTest"/>
+          <include name="deletePotentialAccountTest"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.PotentialTest -->
+      <class name="com.qtpselenium.zoho.project.testcases.LeadTest">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LeadTest -->
+    </classes>
+  </test> <!-- TestC(failed) -->
+</suite> <!-- Failed suite [SuiteName] -->

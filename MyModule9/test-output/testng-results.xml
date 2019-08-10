@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="56" started-at="2016-01-01T15:28:20Z" finished-at="2016-01-01T15:28:20Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="56" started-at="2016-01-01T15:28:20Z" finished-at="2016-01-01T15:28:20Z">
+      <class name="SampleClass">
+        <test-method status="PASS" signature="btest()[pri:0, instance:SampleClass@34033bd0]" name="btest" is-config="true" duration-ms="17" started-at="2016-01-01T19:28:20Z" finished-at="2016-01-01T19:28:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- btest -->
+        <test-method status="PASS" signature="bmethod()[pri:0, instance:SampleClass@34033bd0]" name="bmethod" is-config="true" duration-ms="1" started-at="2016-01-01T19:28:20Z" finished-at="2016-01-01T19:28:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmethod -->
+        <test-method status="PASS" signature="simple()[pri:0, instance:SampleClass@34033bd0]" name="simple" duration-ms="11" started-at="2016-01-01T19:28:20Z" finished-at="2016-01-01T19:28:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simple -->
+        <test-method status="PASS" signature="amethod()[pri:0, instance:SampleClass@34033bd0]" name="amethod" is-config="true" duration-ms="0" started-at="2016-01-01T19:28:20Z" finished-at="2016-01-01T19:28:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amethod -->
+        <test-method status="PASS" signature="simpleTest()[pri:0, instance:SampleClass@34033bd0]" name="simpleTest" duration-ms="1" started-at="2016-01-01T19:28:20Z" finished-at="2016-01-01T19:28:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleTest -->
+        <test-method status="PASS" signature="bmethod()[pri:0, instance:SampleClass@34033bd0]" name="bmethod" is-config="true" duration-ms="0" started-at="2016-01-01T19:28:20Z" finished-at="2016-01-01T19:28:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmethod -->
+        <test-method status="PASS" signature="amethod()[pri:0, instance:SampleClass@34033bd0]" name="amethod" is-config="true" duration-ms="1" started-at="2016-01-01T19:28:20Z" finished-at="2016-01-01T19:28:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amethod -->
+        <test-method status="PASS" signature="atest()[pri:0, instance:SampleClass@34033bd0]" name="atest" is-config="true" duration-ms="1" started-at="2016-01-01T19:28:20Z" finished-at="2016-01-01T19:28:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- atest -->
+      </class> <!-- SampleClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Gmail">
+
+
+<test name="Simple Gmail">
+    <classes>
+        <class name="Test.Gmailmessage" ></class>  
+    </classes>
+</test>
+
+<test name="Test Gmail">
+    <classes>
+        <class name="Test.TestGmail" ></class>  
+    </classes>
+</test>
+
+<test name="Parameterization">
+    <classes>
+        <class name="Test.Parameterize" ></class>  
+    </classes>
+</test>
+
+
+</suite>

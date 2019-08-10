@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="51" started-at="2015-10-05T16:24:13Z" finished-at="2015-10-05T16:24:13Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="51" started-at="2015-10-05T16:24:13Z" finished-at="2015-10-05T16:24:13Z">
+      <class name="testListner">
+        <test-method status="PASS" signature="userlogin()[pri:1, instance:testListner@4b6995df]" name="userlogin" duration-ms="20" started-at="2015-10-05T20:24:13Z" finished-at="2015-10-05T20:24:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userlogin -->
+        <test-method status="PASS" signature="adminlogin()[pri:2, instance:testListner@4b6995df]" name="adminlogin" duration-ms="1" started-at="2015-10-05T20:24:13Z" finished-at="2015-10-05T20:24:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminlogin -->
+      </class> <!-- testListner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
