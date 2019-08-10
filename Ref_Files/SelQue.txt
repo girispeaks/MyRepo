@@ -1,0 +1,29 @@
+intro urself
+types of xpath
+1 xpath -  2 objects, 1 hidden, 1 on screen
+total number of links on a screen
+types of exceptions - 
+What is stale element exception and why it comes
+take screenshot
+testNg annotation and use of dataProvider
+challenges faced while building framework
+different types of wait statements
+diff btw findElement/findElements
+duplicate value in a dropdown
+different btw get and navigate
+How to get css property of an element like font size, color
+Eg:driver.findElement(By.id(“id“)).getCssValue(“name of css attribute”);
+How do u switch back from a frame
+
+
+
+DataBase:
+DML statements
+syntax for update
+
+Java:
+diff btw arraylist and linkedlist
+What is an interface?
+What is webdriver and tell me the classes that implements webdriver
+what is typecasting
+

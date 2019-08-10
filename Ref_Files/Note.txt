@@ -1,0 +1,72 @@
+https://github.com/girispeaks/MyRepo.git
+
+
+Prime number
+Palindrome
+fibonaci series
+swap with and without temp variable
+print numbers in a string - str.replaceAll("[^0-9]+", " ");
+
+http://toolsqa.com/automation-practice-table/
+http://toolsqa.com/selenium-webdriver/retry-failed-tests-testng/
+http://www.seleniumeasy.com/selenium-tutorials/how-to-verify-tooltip-text-with-selenium-webdriver-using-java
+http://demoqa.com/tooltip/
+
+
+
+
+
+
+
+
+B2B stands for Business -to -Business, where a business sells goods and services to other business for example , Firms selling raw material to other firms, marketing companies, etc.
+
+B2C stands for Business - to - Consumer , where a business sells it's goods and services directly to the consumer such as applications of Flipkart ,Amazon,etc.
+
+C2B stands for Consumer- to - Business , where the business provides a platform to the consumer as they can provide details of their needs and a company tries to sell their products or services to them , or the consumer may directly choose a company in order to fulfill their needs, for example hotel booking companies , and various goods and services comparing companies where consumer can choose the company themselves such as GoIbibo, Trivago, Paisabaazar.com etc.
+
+And finally, C2C stands for Consumer- to - Consumer, where a business provides a common platform to two or more individuals who interact directly in order to buy and sell their products for example , Olx.in, Quikrr , etc.
+
+
+
+Remove duplicate value in an array
+
+kumaran - european head
+
+
+
+
+NTSE -
+
+EOS system - any new business must be registered in EOS(govt system). Unique num will be generated CVR. singlg SVR.
+
+ES - MOM(VAT), lonsom(payroll). To pay tax this system is used(registered). ES gets name address etc from EOS.
+In ES system we have pligt code(type of business, numberic num). based on this code the screen will be displayed.
+
+DCS is the centralized system(security system ldap) roles will be given in this system. (data from ES comes to DCS based on batch process).
+
+NTSE wil hit DCS to get the roles and only these screen will be displayed in NTSE.
+
+ 
+
+DM - access to business users.
+
+
+portal-weblogic
+ ifb and int
+
+
+Indberent is newly reporterd
+tidligere is previous reported
+
+app1 - stub
+app2 - stub
+dev - stub
+sit - stub
+prod - stub
+
+
+Running Soap webservice from command prompt:
+Open the wsdl file in soap and same the project which is in xml formate
+Go to command prompt and fire below command.
+testrunner.bat -sTestSuite C:\Users\gramakrishn6\Desktop\Weather-soapui-project.xml

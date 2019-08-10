@@ -1,0 +1,26 @@
+Maven commands:
+mvn archetype:generate
+mvn compile (After filling the pom.xml)
+mvn eclipse:eclipse
+
+mvn clean install - create the build, compile and execute tests and generate the jar file
+mvn test - this will not create the build, it will only execute the test cases
+mvn package -DskipTests - jst want to generate the build and dont want to execute the test cases.
+
+
+3 major life cycle: 
+1) Maven compile - compile the code. this is done by maven compiler plugin
+2) Maven test - test the test cases. this is done by maven surefire plugin
+3) Maven resource - generate 3 different resources and they jar, wars or ears files. this is done by maven resources plugin
+
+
+html dom is an interface which are available in the form of api. The html dom is provided by specific browser. The dom structure is not same for all versions of specific browser.
+
+3 types of dom -  html, xml, core dom
+
+
+
+
+
+
+

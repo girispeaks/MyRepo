@@ -1,0 +1,77 @@
+BDD:
+Language : Java, Gerkins
+IDE : Eclipse
+tool : Selenium
+logging : Log4j
+Unit test framework : Junit
+cucumber API's
+Build tool - maven
+properties file for storing locators
+
+Feature file:
+
+Feature:
+Description:
+BackGround:
+Scenario:
+Given
+When
+And
+Then
+
+Scenario Outline
+Examples
+
+
+mvn archetype:generate
+artifiact id
+package id
+mvn compile
+mvn eclipse:eclipse
+
+mvn clean install - creates build and then executes test
+mvn test - without creating buidl will execute test
+mvn package -Dskiptest - skips the test cases
+
+mvn lifecycle - compile , test, resource - jar, war, ear
+
+select * from table where conditions
+insert into tablename (column1, column2) values("dfd","dfd");
+update table name set colm="data" where condition
+Delete from table
+
+
+select orders.orderId, Customers.customerName from Orders,Customers where Orders.Customer=Customer.CustomerId
+
+customer and order tables
+select Customer.customerid, order.orderid from Customer Inner Join Order on Customer.CustomerId=Order.Orderid
+
+//div[@id='fkbx']
+//input[@id='q']
+//input[@value='Google Search']
+
+
+
+parent - 
+focus is on the element which is under a parent node and you want to get the parent. 
+Eg: //input[@id='q']/parent::*
+
+child - 
+focus is on the element which is a node and you want all the child present under that node. 
+Eg //div[@id='fkbx']/child::*
+
+following - 
+focus is on a particular element and you want the element which is next to this element. 
+Eg //input[@value='Google Search']/following::* (Gives all tags following this one)
+
+preceding - 
+focus is on a particular element and you want the element which is behind to this element.
+Eg: //input[@value='Google Search']/preceding::li(gives all li tags behind this element)
+
+following-sibling:
+focus is on a particular element and you want the similar element which is next to this element
+Eg //input[@value='Google Search']/following::input (Gives an input tag following this one under that node)
+
+preceding - sibling
+focus is on a particular element and you want the similar element which is behind to this element.
+Eg: //input[@value='Google Search']/preceding::input(gives an input tag behind this element)

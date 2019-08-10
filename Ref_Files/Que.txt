@@ -1,0 +1,147 @@
+//div[@class='app-nm'][text='CRM']
+
+//div[@class='ea-app-container']/div[2]/div/a/div
+//a[text()='All apps']
+
+//span[@id='msgpanel']
+
+//span[text()='Invalid email address']
+
+
+Core Java:
+
+Base class of all classes in java?
+how many ways can we handle exception?
+can a try block follow multiple catch block?
+can multiple try block follow a catch block?
+types of inheritance in java
+Difference between string and stringbuffer?
+use of this keyword in java? this keyword is used in static or instance methods?
+diff btw list and set
+diff btw arraylist and linked list
+wat is method overloading and overriding
+difference betwn abstract class and interface?
+
+
+which version of selenium r u using?
+How do u launch the browser?
+What is a webdriver and firefoxdriver?
+challenges faced in selenium till now
+Give me an example of method overloading in selenium
+syncronization techniques 
+how do you check if a page is fully loaded using javascript
+contents of feature file?
+when do we use scenario and when do we use scenario outline
+how do u execute the feature files?
+Cucumber: wat r various parameters you can pass in cucumber.option? feature, tags, dryrun, strict, output
+how do you skip a scenario in cucumber
+how do you run selected scenarios in cucumber
+wat r the various hooks available in cucumber and how do u use it?
+how do u run the scenario from command prompt
+print the value entered in a text box
+difference betw driver.get() and driver.navigate()
+how to identify an element whose xpath changes dynamically?
+i have 2 elements on the screen, one hidden and other displayed on screen. how will u identify which one is displayed on screen.
+how do u run a failed test cases?
+where do u store the locators and how do u use it in ur project?
+What are the various exceptions that you have come across? when do we get staleelement exception?
+ways to handle the exceptions?
+base class of all classes in java?
+how do u fail a test cases delibratly?
+one class file has 3 methods, A B and C, i want the test to run in a particular order, B A C?
+3 classes A B C and i want to use the methods present in A and B in C?
+difference between beforemethod and beforeclass
+run test cases parallelly?
+what type of report have u been gerating in ur framework?
+why we use gecko driver?
+active element(cursor) que?
+
+switch back frm frame
+
+
+
+
+
+class A - method 1 and 2
+class B - method 3 and 4
+class C - access method 1 2 3 4
+
+Entry criteria:
+requirement doc must be finalized and signed off
+RTM must be signed off
+
+exit criteria:
+Defects that r deferred must be approved by Business.
+
+
+
+
+
+
+
+
+
+
+
+//table[@class='tsc_table_s13']/tbody/tr[1]/td[3]
+
+//table[@class='tsc_table_s13']/tbody/tr["+i+"]/th
+
+
+//table[@class='tsc_table_s13']/tbody/tr[1]/td
+
+
+Roles and Responsibilities:(Tabular format)
+
+Risks:
+Schedule Risk:
+ Wrong time estimation
+ Resources are not tracked properly. All resources like staff, systems, skills of individuals etc.
+ Failure to identify the right test cases that can be automated.
+ Unexpected project scope expansions.
+
+Budget Risk:
+ Wrong budget estimation.
+ Cost overruns
+ Project scope expansion
+
+Operational Risks:
+ Insufficient resources
+ No proper subject training
+ No resource planning
+ No communication in team
+
+Technical risks:
+ Continuous changing requirements
+ No advanced technology available or the existing technology is in initial stages.
+ Product is complex to implement.
+ Difficult project modules integration.
+
+Others:
+ Natural disasters
+ Non-availability of Independent Test environment and accessibility
+ Delayed Testing due To new Issues
+
+
+Test Deliverables:
+Test Plan
+Test Cases
+RTM
+Bug Reports
+Test Metrics
+Customer signoff
+
+
+
+Fibonacci Series - done
+prime number - done
+palindrome - done
+repeated char - done
+reverse a number
+swap
+find vowels - done
+delete duplicate char - 
+number of words in a string - done
+number of char in string - done
+
+ad

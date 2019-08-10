@@ -1,0 +1,36 @@
+Start the jar file studentApp.jar
+
+Get: 200
+http://localhost:8080/student/list --- All students
+http://localhost:8080/student/{id} --- Based on Id
+http://localhost:8080/student/list?programme=Computer Science --- based on programme
+http://localhost:8080/student/list?programme=Computer Science&limit=2 -- only 2 students based on programme
+ 
+Post: 201
+http://localhost:8080/student --- Create new Student
+{
+	"firstName": "Raj",
+	"lastName": "Verma",
+	"email": "raj.verma@gmail.com",
+	"programme": "Financial Analysis",
+	"courses": ["Accounting", "Statistics", "Management"]
+}
+
+Put: 200 (Update multiple fields)
+http://localhost:8080/student/{id}
+{
+	"firstName": "Raju",
+	"lastName": "Vermatej",
+	"email": "raju.verma@gmail.com",
+	"programme": "Computer Science",
+	"courses": ["Java", "Selenium"]
+}
+
+Patch: 200 (Used to update single field selectively)
+http://localhost:8080/student/{id}
+{
+	"email": "raju.vermatej@gmail.com",
+}
+
+Delete: 204
+http://localhost:8080/student/{id}
