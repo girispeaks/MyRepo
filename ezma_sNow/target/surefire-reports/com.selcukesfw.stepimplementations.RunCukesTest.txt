@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.selcukesfw.stepimplementations.RunCukesTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 57.372 sec <<< FAILURE!
+Then I should see "An account already exists with this email address. Please try again or consider resetting your password." on the page(Scenario: Registration negative scenario)  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.AssertionError: 'An account already exists with this email address. Please try again or consider resetting your password.' not found on the page
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at com.selcukesfw.stepimplementations.GenericStepImplementations.verify_text_matching(GenericStepImplementations.java:293)
+	at ?.Then I should see "An account already exists with this email address. Please try again or consider resetting your password." on the page(coursera.feature:14)
+
+Scenario: Registration negative scenario  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.AssertionError: 'An account already exists with this email address. Please try again or consider resetting your password.' not found on the page
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at com.selcukesfw.stepimplementations.GenericStepImplementations.verify_text_matching(GenericStepImplementations.java:293)
+	at ?.Then I should see "An account already exists with this email address. Please try again or consider resetting your password." on the page(coursera.feature:14)
+

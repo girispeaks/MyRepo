@@ -1,0 +1,235 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 226142225,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GenericStepImplementations.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Registration negative scenario",
+        "description": "",
+        "id": "coursera-tests;registration-negative-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 660775,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GenericStepImplementations.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 161756904,
+              "error_message": "java.lang.RuntimeException: Exception occured in creating driver object\r\n\tat com.selcukesfw.utilities.DriverFactory.getDriver(DriverFactory.java:32)\r\n\tat com.selcukesfw.stepimplementations.GenericStepImplementations.i_go_to_URL(GenericStepImplementations.java:98)\r\n\tat ✽.Given I open \"https://accounts.coursera.org/signup\" URL in the browser(coursera.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "I open \"https://accounts.coursera.org/signup\" URL in the browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://accounts.coursera.org/signup",
+                  "offset": 8
+                }
+              ],
+              "location": "GenericStepImplementations.i_go_to_URL(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I enter \"Vara Prasad\" into \"fullname\" text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Vara Prasad",
+                  "offset": 9
+                },
+                {
+                  "val": "fullname",
+                  "offset": 28
+                }
+              ],
+              "location": "GenericStepImplementations.i_enter_value_into_textfield(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I enter \"vara@gmail.com\" into \"email\" text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "vara@gmail.com",
+                  "offset": 9
+                },
+                {
+                  "val": "email",
+                  "offset": 31
+                }
+              ],
+              "location": "GenericStepImplementations.i_enter_value_into_textfield(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "comments": [
+              {
+                "line": 8,
+                "value": "#\tThen I enter \"vara@gmail.com\" into \"confirmEmail\" text field"
+              }
+            ],
+            "line": 9,
+            "name": "I enter \"password123\" into \"password\" text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password123",
+                  "offset": 9
+                },
+                {
+                  "val": "password",
+                  "offset": 28
+                }
+              ],
+              "location": "GenericStepImplementations.i_enter_value_into_textfield(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I select \"terms\" checkbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "terms",
+                  "offset": 10
+                }
+              ],
+              "location": "GenericStepImplementations.i_select_checkbox(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I wait for \"2\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                }
+              ],
+              "location": "GenericStepImplementations.i_wait_for_given_seconds(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I click on \"signup\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "signup",
+                  "offset": 12
+                }
+              ],
+              "location": "GenericStepImplementations.i_click_on_button(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I wait for \"20\" seconds",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20",
+                  "offset": 12
+                }
+              ],
+              "location": "GenericStepImplementations.i_wait_for_given_seconds(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I should see \"An account already exists with this email address. Please try again or consider resetting your password.\" on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "An account already exists with this email address. Please try again or consider resetting your password.",
+                  "offset": 14
+                }
+              ],
+              "location": "GenericStepImplementations.verify_text_matching(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@1234"
+          },
+          {
+            "line": 3,
+            "name": "@chrome"
+          },
+          {
+            "line": 3,
+            "name": "@smoke"
+          },
+          {
+            "line": 3,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Coursera Tests",
+    "description": "",
+    "id": "coursera-tests",
+    "keyword": "Feature",
+    "uri": "coursera.feature"
+  }
+]

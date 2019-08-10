@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations>
+	<browser>firefox</browser>
+	<loginUrl>https://cscqa.service-now.com/login_with_sso.do?glide_sso_id=8769c3ed6f79d600116dbd5dbb3ee460</loginUrl>
+	<page>
+	<signup locator="xpath">/html/body/div[1]/div[1]/section/ui-view/div/div[2]/div/div[1]/div/a</signup>
+	<fullname locator="id">user-modal-full-name</fullname>
+	</page>
+	
+	<!-- ############ NewChange Starts here ############-->
+	
+	<!-- ******* Complete work flow ******* -->
+	
+	<UserId locator="id">USER</UserId>
+	<Signinpassword locator="xpath">/html/body/div[3]/form/div/input[2]</Signinpassword>
+	<Signinsubmit locator="id">loginbtn</Signinsubmit>
+	<search locator="xpath">/html/body/div/nav/div/div[2]/form/div/input</search>
+	<CreateNew locator="xpath">/html/body/div/nav/div/div[3]/div/div/magellan-application-tree/ul/li[2]/ul/li[1]/a</CreateNew>
+	<NormalCRQ locator="xpath">/html/body/form/div[2]/a</NormalCRQ>
+	<Company locator="xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[1]/div[1]/div[2]/div[2]/div/span[2]/a/span[1]</Company>
+	<CompanyName locator="xpath">/html/body/div[1]/div[1]/span/div/div[5]/table/tbody/tr/td/div/table/tbody/tr[2]/td[3]/a</CompanyName>
+	<Category locator="xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[1]/div[1]/div[4]/div[2]/select</Category>
+	<Software locator="xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[1]/div[1]/div[4]/div[2]/select/option[3]</Software>    
+	<ShortDesc locator="xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[2]/div/div[1]/div[2]/input[2]</ShortDesc>
+	<Justification locator="xpath">/html/body/div[2]/form/span[4]/span/div/div/div/div[1]/div[2]/textarea</Justification>
+	<Configuration1 locator="xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[1]/div[1]/div[5]/div[2]/div/span[2]/a/span[1]</Configuration1>
+    <ConfigurationItem locator="xpath">/html/body/div[1]/div/span/div/div[5]/table/tbody/tr/td/div/table/tbody/tr[3]/td[3]/a</ConfigurationItem>
+    <AssignmentGroup locator ="xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[1]/div[2]/div[7]/div[2]/div/input</AssignmentGroup>
+    <AssignedTo locator = "xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[1]/div[2]/div[8]/div[2]/div/span[2]/a</AssignedTo>
+    <AssngedToValue locator = "id">sys_display.change_request.assigned_to</AssngedToValue> 
+    <AssignedToList locator = "xpath">/html/body/div[1]/div[1]/span/div/div[5]/table/tbody/tr/td/div/table/tbody/tr[1]/td[3]/a</AssignedToList>
+    <CRQSubmit locator="id">sysverb_insert</CRQSubmit>
+    <SearchCRQ locator="xpath">/html/body/div[1]/div[1]/span/div/nav/div/span/div/div/input</SearchCRQ>
+    <CRQLink locator="xpath">/html/body/div[1]/div[1]/span/div/div[5]/table[1]/tbody/tr/td/div/table/tbody/tr/td[3]/a</CRQLink>
+    <Scheduletab locator="xpath">/html/body/div[2]/form/div[1]/span[2]/span/span[2]</Scheduletab>
+    <PlannedStartDate locator="xpath">/html/body/div[2]/form/span[3]/span/div/div[1]/div[1]/div[2]/div[2]/div/span/input</PlannedStartDate>
+    <PlannedEndDate locator="xpath">/html/body/div[2]/form/span[3]/span/div/div[1]/div[1]/div[3]/div[2]/div/span/input</PlannedEndDate>
+    <Planning locator = "xpath">/html/body/div[2]/form/div[1]/span[3]/span/span[2]</Planning>
+	<RequestApproval locator="id">request.approval</RequestApproval>    								
+    <userInfo locator="id">user_info_dropdown</userInfo>	
+    <impersonate locator="xpath">/html/body/div/header/div[1]/div/div[2]/div/div[2]/div/ul/li[2]/a</impersonate>							 
+    <SearchForuser locator="xpath">/html/body/div[1]/header/div[1]/div/div[2]/div/div[8]/div/div/div/div[2]/a/span[1]</SearchForuser>
+	<searchUser locator="id">s2id_autogen4_search</searchUser>	
+    <ApproverName locator="xpath">/html/body/div[4]/ul/li/div/div[1]</ApproverName>	
+    <OpenCRQ locator="xpath">/html/body/div/nav/div/div[3]/div/div/magellan-application-tree/ul/li[4]/ul/li/a</OpenCRQ>
+    					     	 
+    <ApproversGoTo locator ="xpath">/html/body/div[2]/div[2]/div/div[4]/span/div[2]/nav/div/span/div/div/span/span/select</ApproversGoTo>
+    <AprroversSearchUser locator = "xpath">/html/body/div[2]/div[2]/div/div[4]/span/div[2]/nav/div/span/div/div/input</AprroversSearchUser>
+    <ApproversCheck locator="xpath">/html/body/div[2]/div[2]/div/div[4]/span/div[2]/div[4]/table[1]/tbody/tr/td/div/table/tbody/tr[1]/td[1]/span/label</ApproversCheck>
+    <Approversdropdown locator ="xpath">/html/body/div[2]/div[2]/div/div[4]/span/div[2]/div[4]/div/table/tbody/tr/td[1]/span[2]/select</Approversdropdown>
+    <ApproverSearch locator="xpath">/html/body/div[2]/div[2]/div/div[4]/span/div[2]/nav/div/span/div/div/input</ApproverSearch>
+    <CABApproversCheck locator="xpath">/html/body/div[2]/div[2]/div/div[4]/span/div[2]/div[4]/div/table/tbody/tr/td[1]/span[1]/label</CABApproversCheck>
+    <TaskCheck locator="xpath">/html/body/div[2]/div[2]/div/div[5]/span/div[2]/div[4]/div/table/tbody/tr/td[1]/span[1]/label</TaskCheck>
+    <ChangeTaskdropdown locator="xpath">/html/body/div[2]/div[2]/div/div[5]/span/div[2]/div[4]/div/table/tbody/tr/td[1]/span[2]/select</ChangeTaskdropdown>
+    <StateDropdown locator="id">change_request.state</StateDropdown>
+    <!-- <ActualStartDate locator="xpath">/html/body/div[2]/form/span[3]/span/div/div[1]/div[2]/div[1]/div[2]/div/span/input</ActualStartDate>  -->
+    <ActualStartDate locator="id">change_request.work_start</ActualStartDate>
+    <ActualEndDate locator="id">change_request.work_end</ActualEndDate>
+    <CloseNotes locator="id">change_request.close_notes</CloseNotes>
+    <Update locator="id">sysverb_update</Update>
+    
+   
+    			   
+    <!-- ****** Copy Change ****** -->
+    <CopyChange locator="id">copy_change_request</CopyChange>
+    <CompanyNameCopy locator="id">sys_display.change_request.company</CompanyNameCopy>
+    				 				
+    
+    						 
+	 <!-- **** CoursEra Login -->
+     <State locator="id">change_request.state</State>
+     
+    <LoginButton locator="xpath">/html/body/div[2]/div/div[1]/div[2]/nav/div/div[3]/ul/li[4]/a</LoginButton>
+    <UserName locator="id">user-modal-email</UserName>
+    <UserPassword locator="id">user-modal-password</UserPassword>
+    <LoginSubmitButton locator="xpath">/html/body/div[6]/div[2]/div/div/form/button</LoginSubmitButton>
+    <ErrorMessage locator="xpath">/html/body/div[3]/form/div/div[1]</ErrorMessage>
+    
+	
+	<!--  ************************old config details************************ -->
+	<ApproversTab locator="xpath">/html/body/div[2]/div[1]/span[4]/span/span[2]</ApproversTab>
+	<signin locator="id">SignInButton</signin>	
+	<SigninEmail locator="id">username</SigninEmail>
+	<Signinpassword locator="id">password</Signinpassword>
+	
+	<Manage locator="id">a_manage</Manage>
+	<Instance locator="xpath">/html/body/div[1]/div[1]/header[2]/div/div/div/div[2]/ul/li[5]/ul/li/a</Instance>
+	<DevInstanceUrl locator="xpath">/html/body/div[1]/div[1]/section/ui-view/div/div[3]/div/div[2]/div[2]/p[2]/a</DevInstanceUrl>
+	<Uname locator="id">user_name</Uname>
+	<Pwd locator="id">user_password</Pwd>
+	<Rembrme locator="xpath">/html/body/form/div/div[3]/span/span/label</Rembrme>
+	<Login locator="xpath">/html/body/form/div/div[4]/button</Login>	
+	
+	<sdec locator="xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[2]/div/div[1]/div[2]/input[4]</sdec>
+    <desc locator="xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[2]/div/div[2]/div[2]/textarea</desc>
+   
+    <Assignmentgroup locator="xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[1]/div[2]/div[4]/div[2]/div/span/a</Assignmentgroup>
+    <heirarchy locator="xpath">/html/body/div[1]/table/tbody/tr/td/table/tbody/tr/td/div/div/div/div/div[3]/table/tbody/tr/td[3]/a</heirarchy>
+    <assigned locator="xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[1]/div[2]/div[5]/div[2]/div/span/a</assigned>
+    <assignedto locator="xpath">//html/body/div[1]/div/span/div/div[5]/table/tbody/tr/td/div/table/tbody/tr[1]/td[3]/a</assignedto>
+    <ChangeNumber locator="xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[1]/div[1]/div[1]/div[2]/input[2]</ChangeNumber>   
+    
+    
+	<email1 locator="id">user-modal-email</email1>
+	<password1 locator="id">user-modal-password</password1>
+	<terms1 locator="id">coursera-signup-agree</terms1>
+	<signup1 locator="xpath">.//*[@id='rendered-content']/div/div[1]/div/div/div[5]/div/div/div/div/div[1]/div/div/form/button </signup1>
+	<Welcome locator="classname">headingText</Welcome>
+	<firstname locator="id">firstName</firstname>
+	<lastname locator="id">lastName</lastname>
+	<email locator="id">username</email>
+	<password locator="id">password</password>
+	<confirmpassword locator="id">confirmPassword</confirmpassword>
+	<terms locator="id">termsOfUseLabel</terms>
+	<submit locator="id">submitButton</submit>
+	<ActivationInfo locator="classname">headingText</ActivationInfo>
+	<search1 locator="id">filter</search1>
+	<ActivationTerms locator="classname">checkbox</ActivationTerms>
+	<ReqInst locator="id">instanceReqBtn</ReqInst>
+	<ReqInstTerms locator="xpath">/html/body/div[1]/div[1]/section/ui-view/div/div[1]/div/div/div/div[2]/form/div/div/div/button</ReqInstTerms>
+	<DevInstURL locator="xpath">/html/body/div[1]/div[1]/section/ui-view/div/div[2]/div/div[2]/div[2]/p[2]/a</DevInstURL>
+	<justification locator="id">change_request.justification</justification>
+       <implementationplan locator="id">change_request.implementation_plan</implementationplan>
+       <changeplan locator="id">change_request.change_plan</changeplan>
+       <riskfield locator="id">change_request.risk_impact_analysis</riskfield>
+       <backoutfiled locator="id">change_request.backout_plan</backoutfiled>
+       <testplanfield locator="id">change_request.test_plan</testplanfield>
+      <Assignmentgroup1 locator="id">lookup.change_request.assignment_group</Assignmentgroup1>
+       <heirarchy1 locator="xpath">/html/body/div[1]/table/tbody/tr/td/table/tbody/tr/td/div/div/div/div/div[2]/table/tbody/tr/td[3]/a</heirarchy1>
+       <submitCRQ locator="xpath">/html/body/div[1]/span/span/nav/div/div[2]/span[1]/span/span/button</submitCRQ>
+       <searchCRQ locator="xpath">/html/body/div[1]/div[1]/span/div/nav/div/span/div/div/input</searchCRQ>
+       <stateCRQ locator="xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[2]/div[2]/div[3]/div[2]/select</stateCRQ>
+		<Assignee locator="id">sys_display.change_request.assigned_to</Assignee>
+		<RequestApproval locator="xpath">/html/body/div[2]/form/div[2]/button[1]</RequestApproval>	
+	<stateComp locator="id">change_request.state</stateComp>
+	
+	<ShrtDesc locator="id">change_request.short_description</ShrtDesc>
+									
+	
+
+
+<Change locator="xpath">/html/body/div/nav/div/div[3]/div/div/magellan-application-tree/ul/li[5]/span/a</Change>
+
+
+
+<ClickCRQ locator="xpath">/html/body/div[1]/div[1]/span/div/div[5]/table[1]/tbody/tr/td/div/table/tbody/tr/td[3]/a</ClickCRQ>
+<OpenCRQ locator="xpath">/html/body/div/nav/div/div[3]/div/div/magellan-application-tree/ul/li[5]/ul/li[2]/a</OpenCRQ>
+ <OpenCREQ locator="xpath">/html/body/div/nav/div/div[3]/div/div/magellan-application-tree/ul/li[1]/ul/li[2]/a</OpenCREQ>                                          
+							
+<OpenCRQButton locator="xpath">/html/body/div[1]/div[1]/span/div/div[5]/table[1]/tbody/tr/td/div/table/tbody/tr[1]/td[3]/a</OpenCRQButton>
+<Schedule locator="xpath">/html/body/div[2]/form/div[1]/span[2]/span/span[2]</Schedule>
+
+							
+
+<ApprovalDrp locator="xpath">/html/body/div[2]/div[2]/div/div[3]/span/div[2]/div[4]/div/table/tbody/tr/td[1]/span[2]/select</ApprovalDrp>
+							
+<ApprovalSel locator="xpath">/html/body/div[2]/div[2]/div/div[3]/span/div[2]/div[4]/div/table/tbody/tr/td[1]/span[2]/select/option[2]</ApprovalSel>
+
+<AuthApprovaltab locator="xpath">//div[@id='tabs2_list']/span[3]/span</AuthApprovaltab>
+<AuthApproversCheck locator="xpath">/html/body/div[2]/div[2]/div/div[3]/span/div[2]/div[4]/div/table/tbody/tr/td[1]/span[1]/label</AuthApproversCheck>
+<AuthApprovalDrp locator="xpath">/html/body/div[2]/div[2]/div/div[3]/span/div[2]/div[4]/div/table/tbody/tr/td[1]/span[2]/select</AuthApprovalDrp>
+<AuthApprovalSel locator="xpath">/html/body/div[2]/div[2]/div/div[3]/span/div[2]/div[4]/div/table/tbody/tr/td[1]/span[2]/select/option[2]</AuthApprovalSel>
+<Implement locator="id">state_model_move_to_implement</Implement>
+<Review locator="id">state_model_move_to_review</Review>
+<ClosureTab locator="xpath">//div[@id='tabs2_section']/span[5]/span/span[2]</ClosureTab>
+<CloseCode locator="xpath">.//*[@id='change_request.close_code']</CloseCode>
+<CloseCodeVal locator="xpath">.//*[@id='change_request.close_code']/option[2]</CloseCodeVal>
+<CloseNotes locator="xpath">/html/body/div[2]/form/span[6]/span/div/div/div/div[2]/div[2]/textarea</CloseNotes>
+<CloseCRQ locator="xpath">/html/body/div[2]/form/div[2]/button[1]</CloseCRQ>
+	<Hierrachysearch locator="xpath">/html/body/div[1]/div[1]/span/div/nav/div/span/div/div/input</Hierrachysearch>
+	
+	<Datepicker locator="xpath">/html/body/div[2]/form/span[3]/span/div/div[1]/div[1]/div[1]/div[2]/div/span/span/a/span[1]</Datepicker>
+	<!-- Risk -->
+       
+       
+       <Datepicker locator="xpath">/html/body/div[2]/form/span[3]/span/div/div[1]/div[1]/div[1]/div[2]/div/span/input</Datepicker>
+       
+       
+     <!-- 
+      <ActualStartDate locator="xpath">/html/body/div[2]/form/span[3]/span/div/div[1]/div[2]/div[1]/div[2]/div/span/input</ActualStartDate>
+      									
+       <ActualEndDate locator="xpath">/html/body/div[2]/form/span[3]/span/div/div[1]/div[2]/div[2]/div[2]/div/span/input</ActualEndDate>
+        --> 
+       <calculaterisk locator="xpath">/html/body/div[2]/form/table/tbody/tr[2]/td/a</calculaterisk>
+       <Risk locator="xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[2]/div[1]/div[6]/div[2]/select/option[3]</Risk>
+       <RiskState locator="xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[2]/div[1]/div[6]/div[2]/select</RiskState>
+       <!-- Conflicts -->
+       
+       <conflictsTab locator="xpath">/html/body/div[2]/form/div[1]/span[3]/span/span[2]</conflictsTab>
+       <checkconflicts locator="xpath">/html/body/div[2]/form/span[4]/span/div/div/div/div[1]/table/tbody/tr/td/div[3]/div/div[2]/button</checkconflicts>
+       <conflictsclose locator="xpath">/html/body/div[7]/div/div/div/rendered_body/div[3]/button</conflictsclose>
+       <conflictstatus locator="xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[2]/div[2]/div[5]/div[2]/select</conflictstatus>
+       <Conflicterror locator="xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[2]/div[2]/div[5]/div[2]/div/div</Conflicterror>
+       <ConflictStatusVal locator="id">sys_readonly.change_request.conflict_status</ConflictStatusVal>
+       <copychange locator="id">copy_change_request</copychange>
+		<ConflictType locator="xpath">/html/body/div[2]/form/span[4]/span/div/div/div/div[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/div/span/div[2]/div[2]/table/tbody/tr/td/div/table/tbody/tr[1]/td[5]/a</ConflictType>
+	<field locator="xpath">/html/body/div[2]/form/span[4]/span/div/div/div/div[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/div/span/div[2]/div[2]/table/tbody/tr/td/div/table/tbody</field>
+	
+	<firstpath locator="xpath">/html/body/div[2]/form/span[4]/span/div/div/div/div[2]/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/div/span/div[2]/div[2]/table/tbody/tr/td/div/table/tbody/tr[</firstpath>
+	<CI locator="id">sys_display.change_request.cmdb_ci</CI>
+	<!-- Copychange -->
+
+	<Requestnumber locator="xpath">/html/body/div[2]/form/span[1]/span/div[5]/div[2]/div[1]/div[1]/div[2]/input[2]</Requestnumber>
+	<searchcopyuser locator="xpath">/html/body/div[1]/div[1]/span/div/nav/div/span/div/div/input</searchcopyuser>
+	
+	
+	<from locator="id">ctl00_ContentInfo_Booking1_Origin_txtOrigin</from>
+	<to locator="id">ctl00_ContentInfo_Booking1_Destination_txtDestination</to>
+	<departDate locator="id">ctl00_ContentInfo_Booking1_DepDateTime_Depdate_txtDptDate</departDate>
+	<submit locator="id">ctl00_ContentInfo_Booking1_btnSearchFlight</submit>
+	<toFlightOption locator="id">ctl00_ContentInfo_Results_ShowSegments1_ShowSegment_ctl00_selectbutton</toFlightOption>
+	<returnOption locator="id">ctl00_ContentInfo_Results_ShowSegments1_ShowSegment_ctl00_selectbutton</returnOption>
+	
+	<database>
+	<driverclass>com.mysql.jdbc.Driver</driverclass>
+	<jdbcurl>jdbc:mysql://20.201.180.202:3306/selcukes</jdbcurl>
+	<username>dbuser</username>
+	<password>dbuser</password>
+	</database>
+	
+	<dbquery>
+	<query>select * from student</query>
+	</dbquery>
+	
+	
+</configurations>

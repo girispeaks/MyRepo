@@ -1,0 +1,140 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Registering an user",
+        "description": "",
+        "id": "registering-an-user-in-coursera;registering-an-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13339313813,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I go to \"RegisterUrl\" on \"browser\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "RegisterUrl",
+                  "offset": 9
+                },
+                {
+                  "val": "browser",
+                  "offset": 26
+                }
+              ],
+              "location": "RegisterUser.i_go_to_screen(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 87568550,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter \"Test1a34a\" in \"fullName\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test1a34a",
+                  "offset": 9
+                },
+                {
+                  "val": "fullName",
+                  "offset": 24
+                }
+              ],
+              "location": "RegisterUser.i_enter(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 101030423,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter \"text222a5a@gmail.com\" in \"email\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "text222a5a@gmail.com",
+                  "offset": 9
+                },
+                {
+                  "val": "email",
+                  "offset": 35
+                }
+              ],
+              "location": "RegisterUser.i_enter(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57676856,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter \"fridaa@316234\" in \"Password\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fridaa@316234",
+                  "offset": 9
+                },
+                {
+                  "val": "Password",
+                  "offset": 28
+                }
+              ],
+              "location": "RegisterUser.i_enter(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7511313131,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on \"SignUp\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SignUp",
+                  "offset": 12
+                }
+              ],
+              "location": "RegisterUser.i_click_on_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11850606,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user registration must be successful",
+            "match": {
+              "location": "RegisterUser.user_registration_must_be_successful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registering an user in courseRA",
+    "description": "",
+    "id": "registering-an-user-in-coursera",
+    "keyword": "Feature",
+    "uri": "Register.feature"
+  }
+]

@@ -1,0 +1,6 @@
+com\pageobjmod\qa\pages\Junk.class
+com\pageobjmod\qa\pages\LoginPage.class
+com\pageobjmod\qa\pages\ContactsPage.class
+com\pageobjmod\qa\base\BaseTest.class
+com\pageobjmod\qa\pages\HomePage.class
+com\pageobjmod\qa\util\ExtentReportManager.class

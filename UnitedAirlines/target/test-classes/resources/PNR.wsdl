@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by TIBCO WSDL-->
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://xmlns.example.com/1401893702682" xmlns:ns0="http://www.united.com/schemas/pnr/pnrservice.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap12/" name="Untitled" targetNamespace="http://xmlns.example.com/1401893702682">
+    <wsdl:types>
+        <xs:schema xmlns="http://www.united.com/schemas/pnr/pnrservice.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.united.com/schemas/pnr/pnrservice.xsd">
+            <xs:element name="getPassengersByFlightRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Header" type="ns0:RequestHeader"/>
+                        <xs:element name="Input" type="ns0:FlightLeg"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getPassengersByFlightResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Header" type="ns0:ResponseHeader"/>
+                        <xs:element name="Input" type="ns0:FlightLeg"/>
+                        <xs:element minOccurs="0" name="Output" type="ns0:PNRGroups"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getPassengersByRecordLocatorRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Header" type="ns0:ResponseHeader"/>
+                        <xs:element name="Input">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="RecordLocator" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getPassengersByRecordLocatorResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Header" type="ns0:ResponseHeader"/>
+                        <xs:element name="Input">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="RecordLocator" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="Output">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="PNRGroup" type="ns0:PNRGroup"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getPassengersWithSSRByFlightRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Header" type="ns0:RequestHeader"/>
+                        <xs:element name="Input" type="ns0:FlightLeg"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="getPassengersWithSSRByFlightResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Header" type="ns0:ResponseHeader"/>
+                        <xs:element name="Input" type="ns0:FlightLeg"/>
+                        <xs:element minOccurs="0" name="Output" type="ns0:PNRGroups"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:complexType name="FlightLeg">
+                <xs:attribute name="CarrierCd" type="xs:string" use="required"/>
+                <xs:attribute name="Destination" type="xs:string" use="required"/>
+                <xs:attribute name="FlightNumber" type="xs:string" use="required"/>
+                <xs:attribute name="LegIndex" type="xs:integer"/>
+                <xs:attribute name="MktCarrCd" type="xs:string"/>
+                <xs:attribute name="Origin" type="xs:string" use="required"/>
+                <xs:attribute name="ScheduledDepartureDate" type="xs:string" use="required"/>
+            </xs:complexType>
+            <xs:complexType name="PNRGroup">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="FlightSegment" type="ns0:FlightLeg"/>
+                    <xs:element maxOccurs="unbounded" name="Passenger" type="ns0:Passenger"/>
+                </xs:sequence>
+                <xs:attribute name="BookedDateTime" type="xs:dateTime"/>
+                <xs:attribute name="GroupName" type="xs:string"/>
+                <xs:attribute name="NumberInParty" type="xs:integer"/>
+                <xs:attribute name="ParentRecordLocator" type="xs:string"/>
+                <xs:attribute name="PnrCreationDtTm" type="xs:dateTime"/>
+                <xs:attribute name="RecordLocator" type="xs:string" use="required"/>
+            </xs:complexType>
+            <xs:complexType name="PNRGroups">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="PNRGroup" type="ns0:PNRGroup"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="Passenger">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="Segment" type="ns0:PaxSegment"/>
+                </xs:sequence>
+                <xs:attribute name="EmployeeId" type="xs:string"/>
+                <xs:attribute name="FQTVAccountNumber" type="xs:string"/>
+                <xs:attribute name="FQTVCarrierCode" type="xs:string"/>
+                <xs:attribute name="FQTVEliteStatusCode" type="xs:string"/>
+                <xs:attribute name="FirstNamePos" type="xs:int"/>
+                <xs:attribute name="LastNamePos" type="xs:int"/>
+                <xs:attribute name="PassengerFirstName" type="xs:string"/>
+                <xs:attribute name="PassengerInitialKey" type="xs:string"/>
+                <xs:attribute name="PassengerSurname" type="xs:string"/>
+                <xs:attribute name="PassengerSurnameKey" type="xs:string"/>
+            </xs:complexType>
+            <xs:complexType name="PaxSegment">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="SSR">
+                        <xs:complexType>
+                            <xs:attribute name="Code" type="xs:string"/>
+                            <xs:attribute name="Comment" type="xs:string"/>
+                            <xs:attribute name="RawSSR" type="xs:string"/>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="BookedClassOfService" type="xs:string"/>
+                <xs:attribute name="CarrierCd" type="xs:string" use="required"/>
+                <xs:attribute name="CurrentClassOfService" type="xs:string"/>
+                <xs:attribute name="Destination" type="xs:string" use="required"/>
+                <xs:attribute name="EmployeeSeniorityDate" type="xs:string"/>
+                <xs:attribute name="EplusSubcriptionCode" type="xs:string"/>
+                <xs:attribute name="EplusSubscriptionBeneficiaryCnt" type="xs:integer"/>
+                <xs:attribute name="EplusSubscriptionEffectiveDate" type="xs:string"/>
+                <xs:attribute name="EplusSubscriptionExpiryDate" type="xs:string"/>
+                <xs:attribute name="FlightNumber" type="xs:string" use="required"/>
+                <xs:attribute name="HasEplusFlightPurchase" type="xs:boolean"/>
+                <xs:attribute name="HasEplusSubscription" type="xs:boolean"/>
+                <xs:attribute name="Origin" type="xs:string" use="required"/>
+                <xs:attribute name="PositiveSpaceRiderLevel" type="xs:string"/>
+                <xs:attribute name="PrevSegmentActionCode" type="xs:string"/>
+                <xs:attribute name="ScheduledDepartureDate" type="xs:string" use="required"/>
+                <xs:attribute name="SegmentActionCode" type="xs:string"/>
+                <xs:attribute name="SpaceAvailableRiderLevel" type="xs:string"/>
+                <xs:attribute name="hasInboundCnx" type="xs:string"/>
+                <xs:attribute name="hasLapInfant" type="xs:boolean"/>
+                <xs:attribute name="hasOutboundCnx" type="xs:string"/>
+                <xs:attribute name="isChild" type="xs:boolean"/>
+                <xs:attribute name="isComplimentaryEliteUpgrade" type="xs:boolean"/>
+                <xs:attribute name="isDisabledPassenger" type="xs:boolean"/>
+                <xs:attribute name="isFAM" type="xs:boolean"/>
+                <xs:attribute name="isMarried" type="xs:string"/>
+                <xs:attribute name="isPremiumCabinUpgrade" type="xs:boolean"/>
+                <xs:attribute name="isPrisonerOrGuard" type="xs:boolean"/>
+                <xs:attribute name="isUnaccompaniedMinor" type="xs:boolean"/>
+            </xs:complexType>
+            <xs:complexType name="RequestHeader">
+                <xs:attribute name="appID" type="xs:string" use="required"/>
+                <xs:attribute name="channelID" type="xs:string"/>
+                <xs:attribute name="correlationID" type="xs:string"/>
+                <xs:attribute name="timestamp" type="xs:dateTime"/>
+                <xs:attribute name="user" type="xs:string"/>
+                <xs:attribute name="version" type="xs:string"/>
+            </xs:complexType>
+            <xs:complexType name="ResponseHeader">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="RequestHeader" type="ns0:RequestHeader"/>
+                    <xs:element name="StatusCode">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="Success"/>
+                                <xs:enumeration value="Failed"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="ErrorDescription" type="xs:string"/>
+                    <xs:element name="timestamp" type="xs:dateTime"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:service name="PNRService">
+        <wsdl:port binding="tns:PNRServicePortEndpoint1Binding" name="PNRServicePortEndpoint1">
+            <soap:address location="http://127.0.1.1:9090/SharedResources/PNRService.serviceagent/PNRServicePortEndpoint1"/>
+        </wsdl:port>
+    </wsdl:service>
+    <wsdl:portType name="PNRServicePort">
+        <wsdl:operation name="getPassengersWithSSRByFlight">
+            <wsdl:input message="tns:getPassengersWithSSRByFlightRequest"/>
+            <wsdl:output message="tns:getPassengersWithSSRByFlightResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getPassengersByFlight">
+            <wsdl:input message="tns:getPassengersByFlightRequest"/>
+            <wsdl:output message="tns:getPassengersByFlightResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getPassengersByRecordLocator">
+            <wsdl:input message="tns:getPassengersByRecordLocatorRequest"/>
+            <wsdl:output message="tns:getPassengersByRecordLocatorResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="PNRServicePortEndpoint1Binding" type="tns:PNRServicePort">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="getPassengersWithSSRByFlight">
+            <soap:operation soapAction="/SharedResources/PNRService.serviceagent/PNRServicePortEndpoint1/getPassengersWithSSRByFlight" soapActionRequired="true" style="document"/>
+            <wsdl:input>
+                <soap:body parts="getPassengersWithSSRByFlightRequest" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="getPassengersWithSSRByFlightResponse" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getPassengersByFlight">
+            <soap:operation soapAction="/SharedResources/PNRService.serviceagent/PNRServicePortEndpoint1/getPassengersByFlight" soapActionRequired="true" style="document"/>
+            <wsdl:input>
+                <soap:body parts="getPassengersByFlightRequest" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="getPassengersByFlightResponse" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getPassengersByRecordLocator">
+            <soap:operation soapAction="/SharedResources/PNRService.serviceagent/PNRServicePortEndpoint1/getPassengersByRecordLocator" soapActionRequired="true" style="document"/>
+            <wsdl:input>
+                <soap:body parts="getPassengersByRecordLocatorRequest" use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body parts="getPassengersByRecordLocatorResponse" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:message name="getPassengersWithSSRByFlightRequest">
+        <wsdl:part element="ns0:getPassengersWithSSRByFlightRequest" name="getPassengersWithSSRByFlightRequest"/>
+    </wsdl:message>
+    <wsdl:message name="getPassengersWithSSRByFlightResponse">
+        <wsdl:part element="ns0:getPassengersWithSSRByFlightResponse" name="getPassengersWithSSRByFlightResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getPassengersByFlightRequest">
+        <wsdl:part element="ns0:getPassengersByFlightRequest" name="getPassengersByFlightRequest"/>
+    </wsdl:message>
+    <wsdl:message name="getPassengersByFlightResponse">
+        <wsdl:part element="ns0:getPassengersByFlightResponse" name="getPassengersByFlightResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getPassengersByRecordLocatorRequest">
+        <wsdl:part element="ns0:getPassengersByRecordLocatorRequest" name="getPassengersByRecordLocatorRequest"/>
+    </wsdl:message>
+    <wsdl:message name="getPassengersByRecordLocatorResponse">
+        <wsdl:part element="ns0:getPassengersByRecordLocatorResponse" name="getPassengersByRecordLocatorResponse"/>
+    </wsdl:message>
+</wsdl:definitions>

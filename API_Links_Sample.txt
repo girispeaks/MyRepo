@@ -1,0 +1,80 @@
+ Response response = get("/lotto");
+ String body = response.getBody().asString();
+ String headerValue = response.getHeader("headerName");
+ String cookieValue = response.getCookie("cookieName");
+
+
+
+https://jsonplaceholder.typicode.com/comments?postId=1
+
+
+LIST USERS: GET
+https://reqres.in/api/users?page=2
+
+SINGLE USER: GET
+https://reqres.in/api/users/2
+
+SINGLE USER NOT FOUND: GET
+https://reqres.in/api/users/23
+
+LIST <RESOURCE>: GET
+https://reqres.in/api/unknown
+
+SINGLE <RESOURCE>: GET
+https://reqres.in/api/unknown/2
+
+SINGLE <RESOURCE> NOT FOUND: GET
+https://reqres.in/api/unknown/23
+
+CREATE: POST
+https://reqres.in/api/users
+Request sample:
+{
+    "name": "morpheus",
+    "job": "leader"
+}
+
+UPDATE: PUT
+https://reqres.in/api/users/2
+Request sample:
+{
+    "name": "morpheus",
+    "job": "zion resident"
+}
+
+DELETE: DELETE
+https://reqres.in/api/users/2
+
+REGISTER - SUCCESSFUL: POST
+https://reqres.in/api/register
+Requst Sample:
+{
+    "email": "sydney@fife",
+    "password": "pistol"
+}
+
+REGISTER - UNSUCCESSFUL: POST
+https://reqres.in/api/register
+Request Sample:
+{
+    "email": "sydney@fife"
+}
+
+
+LOGIN - SUCCESSFUL: POST
+https://reqres.in/api/login
+Request Sample:
+{
+    "email": "peter@klaven",
+    "password": "cityslicka"
+}
+
+LOGIN - UNSUCCESSFUL: POST
+https://reqres.in/api/login
+Request Sample:
+{
+    "email": "peter@klaven"
+}
+
+DELAYED RESPONSE: GET
+https://reqres.in/api/users?delay=3
